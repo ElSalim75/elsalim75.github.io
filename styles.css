@@ -1,0 +1,184 @@
+/* General Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    margin: 20px 0;
+}
+
+.cat-header {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap : 5px;
+}
+
+.cat-header svg {
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Menu Container Layout */
+.menu-container {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.category {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-btn {
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    flex: 1 1 calc(50% - 10px);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Category-Specific Button Colors */
+#pastas button {
+    background-color: #2e7731;
+}
+
+#pastas button:hover {
+    background-color: #1f5821;
+}
+
+#pizzas button {
+    background-color: #b3351c;
+}
+
+#pizzas button:hover {
+    background-color: #792413;
+}
+
+#tacos button {
+    background-color: #c1c126;
+}
+
+#tacos button:hover {
+    background-color: #847e2b;
+}
+
+#panozzos button {
+    background-color: #de8f05;
+}
+
+#panozzos button:hover {
+    background-color: #b97807;
+}
+
+#sodas button {
+    background-color: #0c72e0;
+}
+
+#sodas button:hover {
+    background-color: #0651a2;
+}
+
+/* Total and Reset Button Styles */
+.total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+    }
+}
